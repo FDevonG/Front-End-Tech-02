@@ -64,7 +64,7 @@ article {
 }
 
 article p {
-    margin:10px;
+    margin:20px 10px;
 }
 
 /***********************
@@ -74,6 +74,11 @@ Layout
 h2{
     display:inline-block;
     padding:10px;
+}
+
+article,
+.skills-list li,
+h2{
     border-radius: 10px;
 }
 
@@ -87,6 +92,7 @@ h2{
     max-width:75%;
 }
 
+.skills-list,
 .main-nav,
 .nav-wrapper,
 .footer-wrapper{
@@ -97,6 +103,7 @@ h2{
     padding-top:20px;
 }
 
+/* .skills-list, */
 .main-nav {
     flex-direction: column;
 }
@@ -121,6 +128,19 @@ img {
 
 .wrapper {
     margin:40px 0;
+}
+
+.skills-list{
+    flex-wrap: wrap;
+    max-width: 512px;
+    margin:auto;
+}
+
+.skills-list li{
+    padding:10px;
+    margin:5px;
+    flex:1 45%;
+
 }
 
 #contact{
@@ -153,9 +173,19 @@ Color
 header,
 #contact,
 footer,
-article,
 h2{
     background-color: #543C24;
+}
+
+.skills-list li,
+article{
+    background-color: rgba(223, 171, 120, 50%);
+}
+
+article,
+article p,
+.skills-list li{
+    color:#543C24;
 }
 
 body,
@@ -207,6 +237,10 @@ Media Queries
     article{
         flex: 1 45%;
         margin: 30px 1.25%;
+    }
+
+    .skills-list li{
+        flex-basis:30%;
     }
 
     #top-link{
